@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="400.0" maxWidth="562.0" minHeight="400.0" minWidth="402.0" onKeyPressed="#keyMoveHnd" prefHeight="400.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fallingApples.FallingApplesController">
+   <children>
+      <Pane id="paneCancha" fx:id="paneCancha" focusTraversable="true" layoutX="14.0" layoutY="14.0" maxHeight="365.0" maxWidth="286.0" minHeight="365.0" minWidth="286.0" onKeyPressed="#keyMoveHnd" prefHeight="365.0" prefWidth="286.0" styleClass="paneCancha" stylesheets="@application.css">
+         <children>
+            <Label id="textoResultado" fx:id="textoResultado" alignment="CENTER" layoutY="42.0" prefHeight="282.0" prefWidth="286.0" textAlignment="CENTER" textFill="#e40404" underline="true">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="36.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Label layoutX="305.0" layoutY="15.0" prefHeight="26.0" prefWidth="61.0" text="SCORE:">
+         <font>
+            <Font name="Bell MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label id="puntaje" fx:id="labelPuntaje" layoutX="315.0" layoutY="14.0" onKeyPressed="#keyMoveHnd" prefHeight="55.0" prefWidth="73.0">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
